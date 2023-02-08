@@ -1,0 +1,969 @@
+<!-- Faizal Dwi Al Farizi -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS3</title>
+        <link rel="stylesheet" href="asset/css/style.css" />
+    </head>
+    <body>
+        <header class="container">
+            <h1>CSS<br />Cascading Style Sheet</h1>
+
+            <div class="navbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <nav>
+            <p>Intro</p>
+            <p>Border Radius</p>
+            <p>Opacity</p>
+            <p>RGBA & HSLA</p>
+            <p>Box Shadow</p>
+            <p>Text Shadow</p>
+            <p>Linear Gradient</p>
+            <p>Radial Gradient</p>
+            <p>Font Face</p>
+            <p>Web Font Generator</p>
+            <p>Vendor Prefix</p>
+            <p>Filter</p>
+            <p>Transform</p>
+            <p>Transition</p>
+            <p>Animation</p>
+        </nav>
+
+        <main>
+            <div id="intro">
+                <h2 class="judul">Intro</h2>
+                <div class="container-main">
+                    <h2>Arti</h2>
+                    <p>
+                        Generasi ke-3 dari spesifikasi CSS yang direkomendasikan
+                        oleh W3C
+                    </p>
+                    <p>
+                        W3C : Organisasi yang membuat aturan-aturan terkait
+                        teknologi dan internet
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Kenapa CSS3</h2>
+                    <ol>
+                        <li>Membuat website menjadi lebih fleksibel</li>
+                        <li>
+                            Membuat mock-up dengan cepat tanpa bantuan bahasa
+                            scripting
+                        </li>
+                        <li>
+                            Mengurangi penggunaan gambar = kecepatan load
+                            halaman
+                        </li>
+                        <li>
+                            Penggunaan selector untuk menghindari penggunaan
+                            markup yang boros
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="container-main">
+                    <h2>Property CSS3</h2>
+                    <a
+                        target="_blank"
+                        href="https://www.quackit.com/css/css3/properties/"
+                        >https://www.quackit.com/css/css3/properties/</a
+                    >
+                </div>
+            </div>
+
+            <div id="borderRadius">
+                <h2 class="judul">Border Radius</h2>
+                <div class="container-main">
+                    <h2>Fungsi</h2>
+                    <p>Membuat sudutnya menjadi tumpul</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Property</h2>
+                    <p>div {</p>
+                    <p class="maju1">width : 300px;</p>
+                    <p class="maju1">height : 300px;</p>
+                    <p class="maju1">background-color : salmon;</p>
+                    <p class="maju1">border-radius: 40px;</p>
+                    <p>}</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Membuat lingkaran</h2>
+                    <p>
+                        1/2 dari tinggi & lebarnya atau bisa juga dengan mengisi
+                        valuenya : 50%
+                    </p>
+                    <p>div {</p>
+                    <p class="maju1">width: 400px;</p>
+                    <p class="maju1">height: 400px;</p>
+                    <p class="maju1">border-radius: 150px;</p>
+                    <p>}</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Property lain</h2>
+                    <p>border-top-right-radius:</p>
+                    <p>border-bottom-right-radius:</p>
+                    <p>border-bottom-left-radius:</p>
+                    <p>border-top-left-radius:</p>
+                    <p>
+                        border-radius: [atas-kiri] [bawah-kiri] [bawah-kanan]
+                        [atas-kanan]
+                    </p>
+                </div>
+            </div>
+
+            <div id="opacity">
+                <h2 class="judul">Opacity</h2>
+                <div class="container-main">
+                    <h2>Fungsi</h2>
+                    <p>Membuat element menjadi transparant</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Sintaks</h2>
+                    <p>opacity : .5; >> transparant sebanyak 50%</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Catatan</h2>
+                    <p>
+                        jika element pembungkusnya transparant maka element
+                        childnya juga transparant
+                    </p>
+                </div>
+            </div>
+
+            <div id="rgbaHsla">
+                <h2 class="judul">RGBA & HSLA</h2>
+                <div class="container-main">
+                    <h2>RGBA</h2>
+                    <p>red green blue alpha</p>
+                    <p>background-color : rgba(255,102,0,0.5);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>HSLA</h2>
+                    <p>
+                        hue >> warna<br />
+                        saturation >> kejenuhan<br />
+                        lightness >> keringanan<br />
+                        alpha
+                    </p>
+                    <p>background-color : hsla(24, 100%, 63%, 0.5);</p>
+                </div>
+            </div>
+
+            <div id="boxShadow">
+                <h2 class="judul">Box Shadow</h2>
+                <div class="container-main">
+                    <h2>Fungsi</h2>
+                    <p>Untuk membuat bayangan pada element</p>
+                    <h2>Singkatan</h2>
+                    <p>IXYBC</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Property wajib</h2>
+                    <p>
+                        x-offset : mengatur jarak bayangan pada horizontal/
+                        atas-bawah
+                    </p>
+                    <p>
+                        y-offset : mengatur jarak bayangan pada vertical/
+                        kanan-kiri
+                    </p>
+                    <p>blur : mengatur blur bayangan</p>
+                    <p>color : mengatur warna bayangan</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Example</h2>
+                    <p>box-shadow : [x-offset] [y-offset] [blur] [color]</p>
+                    <p>box-shadow : 5px 5px 5px black</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Transparasi Bayangan</h2>
+                    <p>box-shadow : 5px 5px 5px rgba(0, 0, 0, .75);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Property Spread</h2>
+                    <p>Spread >> sebaran</p>
+                    <p>ukuran untuk bayangan</p>
+                    <p>
+                        box-shadow : [x-offset] [y-offset] [blur] [spread]
+                        [color]
+                    </p>
+                    <p>box-shadow : 30px 30px 5px 5px rgba(0, 0, 0, .75);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Penggunaan tepat spread</h2>
+                    <p>box-shadow : 0px 30px 10px -20px rgba(0, 0, 0, .75);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Property inset</h2>
+                    <p>Insert >> sisipan</p>
+                    <p>membuat bayangan berada dikotaknya</p>
+                    <p>
+                        box-shadow : [inset ][x-offset] [y-offset] [blur]
+                        [spread] [color]
+                    </p>
+                    <p>
+                        box-shadow : inset 0px 30px 10px -20px rgba(0, 0, 0,
+                        .75);
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Multiple Shadow</h2>
+                    <p>box-shadow : 5px 5px 5px rgba(255, 0, 0, .5),</p>
+                    <p class="maju1">-5px -5px 5px rgba(0, 0, 255, 5);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Multiple Border</h2>
+                    <p>box-shadow : 0px 0px 0px 5px red,</p>
+                    <p class="maju1">0px 0px 0px 10px green,</p>
+                    <p class="maju1">0px 0px 0px 15px yellow,</p>
+                    <p class="maju1">0px 0px 0px 20px orange;</p>
+                </div>
+            </div>
+
+            <div id="teksShadow">
+                <h2 class="judul">Teks Shadow</h2>
+                <div class="container-main">
+                    <h2>Property</h2>
+                    <p>text-shadow : [x-offset] [y-offset] [blur] [color]</p>
+                    <p>text-shadow : 5px 5px 10px green</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Multiple Shadow</h2>
+                    <p>text-shadow : 5px 5px 10px green, -5px -5px 10px red</p>
+                </div>
+            </div>
+
+            <div id="linearGradient">
+                <h2 class="judul">Linear Gradient</h2>
+                <div class="container-main">
+                    <h2>linear-gradient</h2>
+                    <p>
+                        bukan property CSS3, melainkan value untuk
+                        background-image
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Sintaks sederhana</h2>
+                    <p>
+                        background-image : linear-gradient([warna-awal],
+                        [warna-akhir]);
+                    </p>
+                    <p>
+                        background : linear-gradient([warna-awal],
+                        [warna-akhir]);
+                    </p>
+                    <p>background-image : linear-gradient(red, green);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Multiple Color</h2>
+                    <p>
+                        background-image : linear-gradient([warna-1], [warna-2],
+                        ..., [warna-n]);
+                    </p>
+                    <p>
+                        background-image : linear-gradient(red, yellow, green);
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Sintaks Lengkap</h2>
+                    <p>
+                        background : linear-gradient([sudut] | [arah],
+                        [warna-awal], [warna-akhir]);
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>sudut</h2>
+                    <p>
+                        background-image : linear-gradient(90deg, red, green);
+                        << kanan ke kiri
+                    </p>
+                    <p>
+                        background-image : linear-gradient(-90deg, red, green);
+                        << kiri ke kanan
+                    </p>
+                    <p>
+                        background-image : linear-gradient(45deg, red, green);
+                        << diagonal
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Arah</h2>
+                    <p>
+                        to bottom >> ke bawah<br />
+                        to top >> ke atas<br />
+                        to left >> ke kiri<br />
+                        to right >> ke kanan<br /><br />
+                        to left top >> ke atas kiri<br />
+                        to left bottom >> ke bawah kiri<br />
+                        to right top >> ke atas kanan<br />
+                        to right bottom >> ke bawah kanan<br /><br />
+                    </p>
+                    <p>
+                        background-image : linear-gradient(to right, red,
+                        green);
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Color Stop</h2>
+                    <p>Memberikan bobot warna berbeda</p>
+                    <p>
+                        background-image : linear-gradient(to right, red 63%,
+                        green 80%);
+                    </p>
+                </div>
+            </div>
+
+            <div id="radialGradient">
+                <h2 class="judul">Radial Gradient</h2>
+                <div class="container-main">
+                    <h2>Sintaks sederhana</h2>
+                    <p>
+                        background : radial-gradient([warna-awal],
+                        [warna-akhir]);
+                    </p>
+                    <p>background : radial-gradient(red, blue);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Multiple Color</h2>
+                    <p>
+                        background : radial-gradient([warna-1], [warna-2], ...,
+                        [warna-n]);
+                    </p>
+                    <p>background : radial-gradient(red, green, blue);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Color Stop</h2>
+                    <p>
+                        background : radial-gradient(red 10%, green 20%, blue
+                        80%);
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Sintaks Lengkap</h2>
+                    <p>
+                        background : radial-gradient([tipe] [jangkauan] at
+                        [posisi-y] [posisi-x], [warna-1], [warna-2], ...,
+                        [warna-n])
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Tipe</h2>
+                    <p>ellipse dan circle</p>
+                    <p>background : radial-gradient(ellipse, red, blue)</p>
+                    <p>background : radial-gradient(circle, red, blue)</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Jangkauan</h2>
+                    <p>jarak dari pusat gradient ke sisi terluar-nya</p>
+                    <h3>closest-corner</h3>
+                    <p>jarak dari pusat gradient ke sudut terdekat element</p>
+                    <p>
+                        background : radial-gradient(circle closest-corner, red,
+                        blue)
+                    </p>
+                    <h3>closest-side</h3>
+                    <p>jarak dari pusat gradient ke sisi terdekat element</p>
+                    <p>
+                        background : radial-gradient(circle closest-side, red,
+                        blue)
+                    </p>
+                    <h3>farthest-corner</h3>
+                    <p>jarak dari pusat gradient ke sudut terjauh element</p>
+                    <p>
+                        background : radial-gradient(circle farthest-corner,
+                        red, blue)
+                    </p>
+                    <h3>farthest-side</h3>
+                    <p>jarak dari pusat gradient ke sudut terjauh element</p>
+                    <p>
+                        background : radial-gradient(circle farthest-side, red,
+                        blue)
+                    </p>
+                    <br />
+                    <p>
+                        menentukan sisi terdekat dan terjauh tergantung pada
+                        elementnya
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Posisi</h2>
+                    <h3>posisi-x</h3>
+                    <p>top</p>
+                    <p>center</p>
+                    <p>bottom</p>
+                    <p>px</p>
+                    <br />
+                    <h3>posisi-y</h3>
+                    <p>left</p>
+                    <p>center</p>
+                    <p>right</p>
+                    <p>px</p>
+                    <br />
+                    <p>
+                        background : radial-gradient(circle farthest-side at top
+                        left, red, blue)
+                    </p>
+                    <br />
+                </div>
+            </div>
+
+            <div id="fontFace">
+                <h2 class="judul">Font Face</h2>
+                <div class="container-main">
+                    <h2>font-family</h2>
+                    <p>font-family : "Arial Narrows", arial, sans-serif;</p>
+                    <p>arial, sans-serif : fallback</p>
+                    <p>fallback : cadangan jika diuser tidak ada</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Google Fonts</h2>
+                    <a target="_blank" href="https://fonts.google.com/"
+                        >https://fonts.google.com/</a
+                    >
+                </div>
+
+                <div class="container-main">
+                    <h2>@font-face</h2>
+                    <p>@font-face {</p>
+                    <p class="maju1">font-family : "namaFontBaru";</p>
+                    <p class="maju1">src: url("lokasi/file/fontBaru.eot");</p>
+                    <p class="maju1">
+                        src: url("lokasi/file/fontBaru.eot?iefix")
+                        format("embedded-opentype"),
+                    </p>
+                    <p class="maju2">
+                        url("lokasi/file/fontBaru.woff2") format("woff2"),
+                    </p>
+                    <p class="maju2">
+                        url("lokasi/file/fontBaru.woff") format("woff"),
+                    </p>
+                    <p class="maju2">
+                        url("lokasi/file/fontBaru.ttf") format("truetype"),
+                    </p>
+                    <p class="maju2">
+                        url("lokasi/file/fontBaru.svg#svgFontName")
+                        format("svg");
+                    </p>
+                    <p>}</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Browser Support</h2>
+                    <a
+                        target="_blank"
+                        href="https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp"
+                        >https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp</a
+                    >
+                </div>
+
+                <div class="container-main">
+                    <h2>Layanan font</h2>
+                    <p>
+                        <a target="_blank" href="https://fonts.google.com/"
+                            >https://fonts.google.com/</a
+                        >
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://www.fontsquirrel.com/"
+                            >https://www.fontsquirrel.com/</a
+                        >
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://www.fontspring.com/"
+                            >https://www.fontspring.com/</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            target="_blank"
+                            href="https://store.typenetwork.com/fonts/"
+                            >https://store.typenetwork.com/fonts/</a
+                        >
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://www.typotheque.com/"
+                            >https://www.typotheque.com/</a
+                        >
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Example</h2>
+                    <p>@font-face {</p>
+                    <p class="maju1">font-family: "Alex Brush";</p>
+                    <p class="maju1">
+                        src: url("AlexBrush-Regular.ttf") format("truetype");
+                    </p>
+                    <p>}</p>
+                    <br />
+                    <p>h1 {</p>
+                    <p class="maju1">font-family: "Alex Brush", arial;</p>
+                    <p>}</p>
+                </div>
+            </div>
+
+            <div id="webFontGenerator">
+                <h2 class="judul">Web Font Generator</h2>
+                <div class="container-main">
+                    <h2>Langkah-langkah</h2>
+                    <ol>
+                        <li class="maju1">
+                            Masuk ke
+                            <a
+                                target="_blank"
+                                href="https://www.fontsquirrel.com/"
+                                >https://www.fontsquirrel.com/</a
+                            >
+                        </li>
+                        <li class="maju1">Masuk menu Webfont Kit</li>
+                        <li class="maju1">
+                            pilih WOFF pada bagian choose Font Formats
+                        </li>
+                        <li class="maju1">klik download</li>
+                    </ol>
+                </div>
+
+                <div class="container-main">
+                    <h2>WOFF / WOFF2</h2>
+                    <p>Web Open File Format</p>
+                    <p>Dikembangkan Mozila</p>
+                    <p>Dibuat khusus untuk website</p>
+                    <p>Di-load lebih cepat daripada jenis font yang lain</p>
+                    <p>Merupakan kompresi dari tipe TTF / OTF</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Web Font Generator</h2>
+                    <ol>
+                        <li class="maju1">
+                            Masuk ke
+                            <a
+                                target="_blank"
+                                href="https://www.fontsquirrel.com/"
+                                >https://www.fontsquirrel.com/</a
+                            >
+                        </li>
+                        <li class="maju1">Masuk Menu Generator</li>
+                        <li class="maju1">Klik UPLOAD FONTS</li>
+                        <li class="maju1">Cari File >> Open</li>
+                        <li class="maju1">Opsi : optimal</li>
+                        <li class="maju1">ceklis</li>
+                        <li class="maju1">Download</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="vendorPrefix">
+                <h2 class="judul">Vendor Prefix</h2>
+                <div class="container-main">
+                    <h2>Fungsi</h2>
+                    <p>Agar Kompatible untuk semua Browser</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Arti</h2>
+                    <p>prefix : awalan</p>
+                    <p>
+                        Sintaks Khusus yang harus ditambahkan untuk beberapa
+                        property CSS3
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Vendor Prefix</h2>
+                    <p>
+                        -webkit-[property-css3] >> Chrome, Safari, Opera versi
+                        terbaru
+                    </p>
+                    <p>-moz-[property-css3] >> Firefox</p>
+                    <p>-ms-[property-css3] >> Internet Explorer</p>
+                    <p>-0-[property-css3] >> Opera Versi Terbaru</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Kenapa Prefix</h2>
+                    <p>Karena tidak semua browser support CSS3</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Example</h2>
+                    <p>-webkit-filter: grayscale(100%);</p>
+                    <p>filter: grayscale(100%);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Website</h2>
+                    <h3>Cek Prefix</h3>
+                    <p>shouldiprefix.com</p>
+                    <p>caniuse.com</p>
+                    <h3>text-editor Prefix</h3>
+                    <p>http://pleeease.io/play/</p>
+                </div>
+            </div>
+
+            <div id="filter">
+                <h2 class="judul">Filter</h2>
+                <div class="container-main">
+                    <h2>Fungsi</h2>
+                    <p>Untuk membuat efek pada gambar</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Singkatan</h2>
+                    <h3>B2 CSG SHI OD</h3>
+                    <p>
+                        B2 (Blur Brighness)<br />
+                        CSG (Contrast Saturate Grayscale)<br />
+                        SHI (Sepia Hue-rotate Invert)<br />
+                        OD (Opacity Drop-shadow)
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Blur</h2>
+                    <p>Untuk Mengeblurkan gambar</p>
+                    <p>filter : blur(30px); << px</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Brighness</h2>
+                    <p>Untuk mengatur terang</p>
+                    <p>filter : brightness(2); << angka atau % || 2 = 200%</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>contrast</h2>
+                    <p>Untuk membuat gambar agak gelap</p>
+                    <p>filter : contrast(1.1); << angka atau % || 1.1 = 110%</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Saturate</h2>
+                    <p>Untuk mengatur saturasi\warna gambar</p>
+                    <p>filter : saturate(1.5); << angka atau % || 1.5 = 150%</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Grayscale</h2>
+                    <p>Untuk mengatur abu-abu</p>
+                    <p>filter : grayscale(1); << angka atau % || 1 = 100%</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>sepia</h2>
+                    <p>Untuk mengatur kuning/lama</p>
+                    <p>filter : sepia(1.5); << angka atau % || 1.5 = 150%</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>hue-rotate</h2>
+                    <p>Untuk mengatur</p>
+                    <p>filter : hue-rotate(100deg); << deg</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Invert</h2>
+                    <p>Untuk mengatur negatif film</p>
+                    <p>filter : invert(1); << angka atau % || 1 = 100%</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Opacity</h2>
+                    <p>Untuk mengatur</p>
+                    <p>filter : opacity(.5); << angka atau % || .5 = 50%</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>drop-shadow</h2>
+                    <p>Untuk mengatur</p>
+                    <p>keuntugan : bisa untuk teks, box, gambar, dan png</p>
+                    <p>filter : dop-shadow(5px 5px 5px black);</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Menumpuk filter</h2>
+                    <p>filter : blur(5px) grayscale(100%)</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>perbedaan menggunakan opacity dan filter opacity</h2>
+                    <p>filter : yang bekerja hardwarenya</p>
+                    <p>opacity dan box-shadow : yang bekerja browser</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>website</h2>
+                    <a
+                        target="_blank"
+                        href="http://html5-demos.appspot.com/static/css/filters/index.html"
+                        >http://html5-demos.appspot.com/static/css/filters/index.html</a
+                    >
+                </div>
+            </div>
+
+            <div id="transform">
+                <h2 class="judul">Transform</h2>
+                <div class="container-main">
+                    <h2>Fungsi Transform</h2>
+                    <h3>Scale</h3>
+                    <p>Memperbesar / Memperkecil</p>
+                    <h3>Rotate</h3>
+                    <p>Memutar</p>
+                    <h3>Skew</h3>
+                    <p>Membuat condong / miring</p>
+                    <h3>Translate</h3>
+                    <p>Mengubah Posisi</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Scale</h2>
+                    <p>value Angka, default : 1</p>
+                    <p>scale(angka), scaleX(angka), scaleY(angka)</p>
+                    <p>transform : scale(1.5)</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Rotate</h2>
+                    <p>value deg</p>
+                    <p>rotate(deg), rotateX(deg), rotateY(deg)</p>
+                    <p>transform : rotate(45deg)</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Skew</h2>
+                    <p>value deg</p>
+                    <p>skew(deg) = skewX(deg), skewY(deg)</p>
+                    <p>transform : skew(30deg)</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Translate</h2>
+                    <p>value px</p>
+                    <p>translate(px), translateX(px), translateY(px)</p>
+                    <p>transform : translate(50px, 100px)</p>
+                    <p>transform : translateX(50px)</p>
+                    <p>transform : translateY(50px)</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Multiple</h2>
+                    <p>transform : scale(3) rotate(360deg)</p>
+                </div>
+            </div>
+
+            <div id="transition">
+                <h2 class="judul">Transition</h2>
+                <div class="container-main">
+                    <h2>Sintaks</h2>
+                    <h3>Wajib</h3>
+                    <p>transition : [durasi]</p>
+                    <h3>opsional</h3>
+                    <p>transition : [property] [durasi] [fungsi] [delay];</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Durasi</h2>
+                    <p>transition : 1s</p>
+                    <p>s : sekon</p>
+                    <p>ms : mili sekon</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Property</h2>
+                    <p>default : all, [nama-property], none</p>
+                    <p>transition : all 1s</p>
+                    <p>transition : margin-left 1s</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Animatable Properties</h2>
+                    <p>background-color</p>
+                    <p>background-position</p>
+                    <p>background-size</p>
+                    <p>border</p>
+                    <p>color</p>
+                    <p>filter</p>
+                    <p>font-size</p>
+                    <p>line-height</p>
+                    <p>top left bottom right</p>
+                    <p>margin padding</p>
+                    <p>width height</p>
+                    <p>opacity</p>
+                    <p>transform</p>
+                    <p>word-spacing</p>
+                    <p>letter-spacing</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>non-animatable properties</h2>
+                    <p>font-family</p>
+                    <p>display</p>
+                    <p>position</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Timing Function</h2>
+                    <p>ease</p>
+                    <p>ease-in</p>
+                    <p>ease-out</p>
+                    <p>ease-in-out</p>
+                    <p>linear</p>
+                    <p>cubic-bezier(w, x, y, z)</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>cubic-bezier</h2>
+                    <p>bisa dilihat diinspect</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Delay</h2>
+                    <p>menunda</p>
+                    <p>transition : 3s 2s</p>
+                </div>
+            </div>
+
+            <div id="animation">
+                <h2 class="judul">Animation</h2>
+                <div class="container-main">
+                    <h2>Property</h2>
+                    <p>@keyframes [nama] {</p>
+                    <p class="maju1">from {</p>
+                    <p class="maju2">[property-css]</p>
+                    <p class="maju1">}</p>
+                    <br />
+                    <p class="maju1">to {</p>
+                    <p class="maju2">[property-css]</p>
+                    <p class="maju1">}</p>
+                    <p>}</p>
+
+                    <br /><br />
+                    <p>@keyframes [nama] {</p>
+                    <p class="maju1">0% {</p>
+                    <p class="maju2">[property-css]</p>
+                    <p class="maju1">}</p>
+                    <br />
+                    <p class="maju1">100% {</p>
+                    <p class="maju2">[property-css]</p>
+                    <p class="maju1">}</p>
+                    <p>}</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>value</h2>
+                    <p>name >> nama</p>
+                    <p>duraation >></p>
+                    <p>timing-function >> fungsi waktu</p>
+                    <p>delay >> menunda</p>
+                    <p>iteration-count >> pengulangan</p>
+                    <p>direction >> arah</p>
+                    <p>fill-mode >> mode isi</p>
+                    <p>play-state >> status</p>
+                    <br /><br />
+
+                    <p>
+                        animation : [name] [durat ion] [timing-function] [delay]
+                        [iteration-count] [derection] [fill-mode] [play-state]
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>iteration-count</h2>
+                    <p>menentukan jumlah perulangan</p>
+                    <br />
+                    <p>&ltAngka&gt</p>
+                    <p>infinite</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>direction</h2>
+                    <p>untuk menentukan arah</p>
+                    <br />
+                    <p>normal >> dari awal sampai akhir</p>
+                    <p>reserved >> kebalikannya</p>
+                    <p>alternate >> dari awal - akhir lalu dari akhir - awal</p>
+                    <p>
+                        alternate-reserved >> dar akhir - awal lalu dari awal -
+                        akhir
+                    </p>
+                </div>
+
+                <div class="container-main">
+                    <h2>fill-mode</h2>
+                    <p>menentukan akhir dari transtion</p>
+                    <br />
+                    <p>none</p>
+                    <p>forwards >> tidak kembali posisi awal</p>
+                    <p>backwards >> kebelakang</p>
+                    <p>both >> kedua</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>play-state</h2>
+                    <p>menjalankan animasi</p>
+                    <br />
+                    <p>running >> berjalan</p>
+                    <p>paused >> berhenti</p>
+                </div>
+
+                <div class="container-main">
+                    <h2>Example</h2>
+                    <p>.kotak {</p>
+                    <p class="maju1">animation-name : animasiKotak</p>
+                    <p class="maju1">animation-duration : 2s</p>
+                    <p class="maju1">animation-timing-function : ease</p>
+                    <p class="maju1">animation-delay : 1s</p>
+                    <p class="maju1">animation-iteration-count : infinite</p>
+                    <p class="maju1">animation-direction : normal</p>
+                    <p class="maju1">animation-fill-mode : forwards</p>
+                    <p class="maju1">animation-play-state :running</p>
+                    <p>}</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container">
+            <p>&copy Faizal Dwi Al Farizi | 2021 | All Rights Reserved</p>
+        </footer>
+
+        <script src="asset/js/script.js"></script>
+    </body>
+</html>
